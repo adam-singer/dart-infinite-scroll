@@ -1,3 +1,0 @@
-[submodule "Reactive-Dart"]
-      path = third_party/Reactive-Dart
-      url = git://github.com/prujohn/Reactive-Dart.git
