@@ -1,5 +1,5 @@
 #import('dart:html');
-#import('../../third_party/Reactive-Dart/lib/reactive_lib.dart');
+#import('../Reactive-Dart/lib/reactive_lib.dart');
 
 class PhotoScroller {
 
