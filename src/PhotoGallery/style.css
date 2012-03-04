@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:#222;
+	color:#666;
+}
+
+#header{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:24px;
+	font-weight:bold;
+	text-align:left;
+	text-indent:35px;
+	margin: 0 auto;
+	width:800px;
+	margin-bottom:10px;
+}
+
+hr{
+	margin: 20px;
+	border:none;
+	border-top: 1px solid #111;
+	border-bottom: 1px solid #333;
+}
+
+p{
+	color:#444;
+	text-align:left;
+	font-size:10px;
+	margin-left: 20px;
+	margin-bottom: -10px;
+}
+
+a{
+	color:#444;
+}
+
+
+
+#container{
+	margin: 0 auto;
+	width:800px;
+	border:1px solid #333;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	font-family:Verdana, Geneva, sans-serif;
+	text-align:center;
+}
+
+img{
+	border:10px solid #444;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 10px;
+	margin: 15px;
+}
+
+img:hover{
+	border-color:#555;
+	-moz-box-shadow: 0px 0px 15px #111;
+	-webkit-box-shadow: 0px 0px 15px #111;
+}
+
+
+.scrollToTop {
+	-moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	box-shadow:inset 1px 1px 0px 0px #ffffff;
+	background-color:transparent;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:Comic Sans MS;
+	font-size:16px;
+	font-weight:bold;
+	/*padding:26px 24px;*/
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+	position:fixed;
+	top:1px;
+	right:-1;
+	-webkit-box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;
+	-webkit-transition-delay: 0s;
+	-webkit-transition-duration: 0.25s;
+	-webkit-transition-property: bottom;
+	-webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+	box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;
+	height: 30px;
+	line-height: 15px;
+	outline-color: #524D4D;
+	outline-style: none;
+	outline-width: 0px;
+	padding-bottom: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	right: 15px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: rgba(255, 255, 255, 0.898438) 0px 1px 0px;
+	width: 50px;
+}
+
+.transitionScrollToTop {
+	-moz-transition: all 1s; 
+	-webkit-transition: all 1s;  
+	-ms-transition: all 1s;  
+	-o-transition: all 1s;  
+	transition: all 1s;  
+}
+
+
+
+
+
+
