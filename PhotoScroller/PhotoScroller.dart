@@ -34,7 +34,7 @@ class PhotoScroller {
     scrollObservable = Observable.fromEvent(window.on.scroll);
     scrollObservable.subscribe((e) {
       container.rect.then((ElementRect rect) {
-        if (window.outerHeight + window.scrollY > rect.scroll.height) {
+        if (window.outerHeight + window.scrollY + 400 > rect.scroll.height) {
           fetchImagesObservable = Observable.fromList(dummyList);
           fetchImagesObservable.subscribe(loadImage);
         }

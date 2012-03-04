@@ -7438,7 +7438,7 @@ PhotoScroller.prototype.run = function() {
   this.scrollObservable = Observable.fromEvent(html_get$$window().get$on().get$scroll());
   this.scrollObservable.subscribe$1((function (e) {
     $this.container.get$rect().then((function (rect) {
-      if (html_get$$window().get$outerHeight() + html_get$$window().get$scrollY() > rect.scroll.get$height()) {
+      if (html_get$$window().get$outerHeight() + html_get$$window().get$scrollY() + (400) > rect.scroll.get$height()) {
         $this.fetchImagesObservable = Observable.fromList($this.dummyList);
         $this.fetchImagesObservable.subscribe$1($this.get$loadImage());
       }
