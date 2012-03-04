@@ -7,7 +7,7 @@ class PhotoScroller {
   List dummyList;
   Element container; 
   Element scrollToTop;
-  
+  int scrollLoadOffset = 400;
   IObservable scrollObservable;
   IObservable fetchImagesObservable;
   PhotoScroller() {
@@ -34,7 +34,7 @@ class PhotoScroller {
     scrollObservable = Observable.fromEvent(window.on.scroll);
     scrollObservable.subscribe((e) {
       container.rect.then((ElementRect rect) {
-        if (window.outerHeight + window.scrollY > rect.scroll.height) {
+        if (window.outerHeight + window.scrollY + scrollLoadOffset > rect.scroll.height) {
           fetchImagesObservable = Observable.fromList(dummyList);
           fetchImagesObservable.subscribe(loadImage);
         }
